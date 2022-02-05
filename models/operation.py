@@ -15,7 +15,7 @@ class Operation(models.Model):
     value = models.IntegerField()
     balance = models.IntegerField()
     reason = OperationReason.field()
-    details = models.CharField(max_lenght=255, blank=True)
+    details = models.CharField(max_length=255, blank=True)
 
     account = models.ForeignKey(
         'Account', on_delete=models.DO_NOTHING, related_name='operations',
