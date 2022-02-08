@@ -4,7 +4,7 @@ from .models import Account, Operation, PromoCode
 
 @admin.register(Account)
 class AccountAdmin(admin.ModelAdmin):
-    list_display = ('id', 'balance')
+    list_display = ('__str__', 'balance')
     readonly_fields = ('balance',)
 
 
