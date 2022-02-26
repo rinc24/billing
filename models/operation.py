@@ -8,6 +8,7 @@ class OperationReason(SafeDeleteTextChoices):
     OTHER = 'OTHER', 'Прочее'
     FEE = 'FEE', 'Абонентская плата'
     PROMO = 'PROMO', 'Активация промо-кода'
+    HELLO = 'HELLO', 'Приветственный бонус'
 
 
 class Operation(models.Model):
