@@ -9,6 +9,7 @@ class OperationReason(SafeDeleteTextChoices):
     FEE = 'FEE', 'Абонентская плата'
     PROMO = 'PROMO', 'Активация промо-кода'
     HELLO = 'HELLO', 'Приветственный бонус'
+    PAY = 'PAY', 'Входящий платеж'
 
 
 class Operation(models.Model):
